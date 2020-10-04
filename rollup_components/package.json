@@ -1,0 +1,39 @@
+{
+  "name": "rollup_test",
+  "version": "1.0.0",
+  "description": "peirong components library test",
+  "main": "dist/peirong.datav.js",
+  "scripts": {
+    "dev": "rollup -wc rollup.config.dev.js",
+    "build": "eslint ./src && rollup -c rollup.config.dev.js",
+    "build:prod": "eslint ./src && rollup -c rollup.config.prod.js",
+    "lint": "eslint ./src"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "keywords": [
+    "vue",
+    "peirong"
+  ],
+  "author": "peirong",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "babel-loader": "^8.1.0",
+    "eslint": "^7.10.0",
+    "eslint-plugin-vue": "^7.0.0",
+    "rollup": "^2.28.2",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-postcss": "^3.1.8",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-vue": "^5.0.0",
+    "sass": "^1.26.11",
+    "vue-template-compiler": "^2.6.12"
+  }
+}
