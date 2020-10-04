@@ -7,10 +7,9 @@
 <script>
 export default {
     name: 'TestComponent3',
-    setup() {
-        const message = 'hello world3333333'
+    data() {
         return {
-            message
+            message: 'hello world333333'
         }
     }
 }
